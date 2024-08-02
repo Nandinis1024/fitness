@@ -94,7 +94,7 @@ export const FollowPointer = ({
         fill="currentColor"
         strokeWidth="1"
         viewBox="0 0 16 16"
-        className="h-6 w-6 text-orange-500 transform -rotate-[70deg] -translate-x-[12px] -translate-y-[10px]  stroke-orange-500"
+        className="h-6 w-6 text-primary transform -rotate-[70deg] -translate-x-[12px] -translate-y-[10px]  stroke-orange-500"
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +118,7 @@ export const FollowPointer = ({
           opacity: 0,
         }}
         className={
-          "px-2 py-2 bg-neutral-200 text-white whitespace-nowrap min-w-max text-xs rounded-full"
+          "px-2 py-2 bg-neutral-200 text-foreground whitespace-nowrap min-w-max text-xs rounded-full"
         }>
         {title || ``}
       </motion.div>
