@@ -2,16 +2,9 @@ import { FaTelegram } from "react-icons/fa";
 import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { ImagesSlider } from "./ui/images-slider";
+import { images } from "@/constants";
 
 const My = () => {
-
-    const images = [
-        "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3ltfGVufDB8fDB8fHww",
-        "https://images.unsplash.com/photo-1662961154170-d2421e29f94b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zml0bmVzc3xlbnwwfHwwfHx8MA%3D%3D",
-        "https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGd5bXxlbnwwfHwwfHx8MA%3D%3D",
-        "https://images.unsplash.com/photo-1550259979-ed79b48d2a30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGd5bXxlbnwwfHwwfHx8MA%3D%3D",
-        "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdvcmtvdXR8ZW58MHx8MHx8fDA%3D"
-    ]
 
     return (
         <div className="h-full w-full">

@@ -7,7 +7,7 @@ const options = [
     'Feature',
     'Courses',
     'Why Join Us?',
-    'About Us',
+    'Contact',
     'Open Demo'
 ]
 
