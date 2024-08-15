@@ -19,10 +19,10 @@ const Feature = ({ feature }) => {
         <FollowerPointerCard>
             <CardContainer className="inter-var">
                 <CardBody
-                    className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
+                    className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[29.5rem] h-auto border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
                 >
                     <div
-                        className="relative flex items-center justify-center w-[500px] h-[300px] overflow-hidden"
+                        className="relative flex items-center justify-center w-[450px] h-[250px] overflow-hidden"
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
@@ -36,7 +36,7 @@ const Feature = ({ feature }) => {
                         <iframe
                             width="100%"
                             height="100%"
-                            src={`${feature.source}?autoplay=${playVideo ? 1 : 0}`}
+                            src={`${feature.source}?autoplay=${playVideo ? 1 : 0}&mute=1`}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
