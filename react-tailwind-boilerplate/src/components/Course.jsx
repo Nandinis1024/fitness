@@ -1,58 +1,33 @@
-import { motion } from "framer-motion";
-import BoxReveal from "./magicui/box-reveal";
-import { BackgroundGradient } from "./ui/background-gradient";
-import { Button } from "./ui/button";
-import { Spotlight } from "./ui/spotlight";
-import Carousel from 'react-spring-3d-carousel';
+import { Button } from "@/components/ui/button"
 
-
-
-
-const Course = ()=>{
+export default function Course() {
   return (
-    <div id="Courses" className="flex justify-center">
-
-      <div className="h-lvh w-lvh max-w-[80rem] flex flex-col items-center justify-start pt-8">
-      <h1 className="text-4xl font-bold text-neutral-900 dark:text-foreground m-5"> About Course </h1>
-        
-       <BackgroundGradient className="  p-4 sm:p-10 bg-white dark:bg-zinc-900">
-       
-        <div className="flex h-80 items-center justify-center">
-          <div className="border-gray-200 border-2 w-full h-full flex items-center justify-center"><h1 className="text-foreground">IMAGE OR A 3D IMAGE CARAUSEL</h1></div>
-         {/* <img src="https://images.unsplash.com/photo-1521804906057-1df8fdb718b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full" alt="image" /> */}
-        </div>
-        <BoxReveal boxColor={"240 10% 3.9%"} duration={1.0}>
-          <h2 className="mt-[.5rem] text-[1rem] text-foreground">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisl nulla, viverra in orci maximus, posuere sodales elit. {" "}
-            <span className="text-primary">Mauris commodo finibus.</span>
-          </h2>
-        </BoxReveal>
-        <BoxReveal boxColor={"240 10% 3.9%"} duration={1.0}>
-          <h2 className="mt-[.5rem] text-[1rem] text-foreground">
-          In molestie massa sed justo rhoncus ultrices. Phasellus semper elementum magna, scelerisque ornare nisl dictum consequat. Ut volutpat varius lacus id porttitor. Nunc et odio venenatis, sodales dui non, tincidunt eros. Morbi facilisis lacus sit amet velit sodales, aliquam lacinia odio varius. Duis ac lobortis magna. Proin dictum ut mauris finibus mattis. Donec id lacinia nibh. Mauris venenatis ligula a massa viverra placerat. Vestibulum semper massa sit amet justo consequat, eget faucibus sapien mattis. Proin porttitor, massa non venenatis posuere, eros elit interdum ex, ac pretium eros ipsum sit amet velit. Vestibulum non tortor dui. Cras sodales dignissim risus id ultrices.
-          </h2>
-        </BoxReveal>
-    
-        <BoxReveal boxColor={"240 10% 3.9%"} duration={1.0}>
-          <div className="mt-[1.5rem]">
-            <p className="text-foreground">
-              -&gt; 20+ free and open-source animated components built with
-              <span className="font-semibold text-primary"> React</span>,
-              <span className="font-semibold text-primary"> Typescript</span>,
-              <span className="font-semibold text-primary"> Tailwind CSS</span>,
-              and
-              <span className="font-semibold text-primary"> Framer Motion</span>
-              . <br />
-              -&gt; 100% open-source, and customizable. <br />
-            </p>
+    <div className="flex flex-col min-h-[100dvh] text-white">
+      <div className="relative w-full max-w-2xl mx-auto overflow-hidden rounded-lg aspect-video">
+        <video className="w-full h-full object-cover">
+          <source
+            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent flex flex-col justify-between p-6">
+          <div className="text-lg font-semibold">Course: Web Development Masterclass</div>
+          <div className="flex justify-between items-center">
+            <div className="text-sm text-gray-400">Duration: 2h 15m</div>
+            <Button className="px-6 py-2 rounded-md bg-[#ff6b00] text-black font-medium hover:bg-[#d95b00] cursor-pointer">
+              Buy Now
+            </Button>
           </div>
-          <div className="mt-8">
-            <Button className='w-24 h-10'>Buy</Button>
-            </div>
-        </BoxReveal>
-        </BackgroundGradient>
+        </div>
       </div>
+      <div className="px-6 py-8 max-w-2xl mx-auto"> 
+        <h2 className="text-2xl font-bold mb-4">Course Description</h2>
+        <p className="text-gray-300">
+          In this comprehensive web development masterclass, you'll learn everything you need to know to build modern,
+          responsive websites and web applications. From HTML and CSS to JavaScript and React, this course covers all
+          the essential skills and technologies to become a proficient web developer.
+        </p>
       </div>
-    );
-};
-export default Course;
+    </div>
+  )
+}
