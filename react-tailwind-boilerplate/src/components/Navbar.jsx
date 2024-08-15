@@ -4,7 +4,7 @@ import { Spotlight } from "./ui/spotlight";
 
 const options = [
     'Home',
-    'Feature',
+    'Features',
     'Courses',
     'Why Join Us?',
     'Contact',
@@ -23,8 +23,8 @@ const Navbar = () => {
 
             <div className="flex space-x-10">
                 {options && options.map((option, index) => {
-                    return <div key={index} className="hover:cursor-pointer hover:text-primary">
-                        {option}
+                    return  <div key={index} className="hover:cursor-pointer hover:text-primary">
+                        <a href={`#${option}`}>{option}</a>
                     </div>
                 })}
             </div>

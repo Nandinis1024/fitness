@@ -10,15 +10,16 @@ import Carousel from 'react-spring-3d-carousel';
 
 const Course = ()=>{
   return (
-    <div className="flex justify-center">
+    <div id="Courses" className="flex justify-center">
 
       <div className="h-lvh w-lvh max-w-[80rem] flex flex-col items-center justify-start pt-8">
       <h1 className="text-4xl font-bold text-neutral-900 dark:text-foreground m-5"> About Course </h1>
         
        <BackgroundGradient className="  p-4 sm:p-10 bg-white dark:bg-zinc-900">
        
-        <div>
-         {/* <img src="https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full" alt="image" />  */}
+        <div className="flex h-80 items-center justify-center">
+          <div className="border-gray-200 border-2 w-full h-full flex items-center justify-center"><h1 className="text-foreground">IMAGE OR A 3D IMAGE CARAUSEL</h1></div>
+         {/* <img src="https://images.unsplash.com/photo-1521804906057-1df8fdb718b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full" alt="image" /> */}
         </div>
         <BoxReveal boxColor={"240 10% 3.9%"} duration={1.0}>
           <h2 className="mt-[.5rem] text-[1rem] text-foreground">
@@ -45,6 +46,9 @@ const Course = ()=>{
               -&gt; 100% open-source, and customizable. <br />
             </p>
           </div>
+          <div className="mt-8">
+            <Button className='w-24 h-10'>Buy</Button>
+            </div>
         </BoxReveal>
         </BackgroundGradient>
       </div>

@@ -5,7 +5,7 @@ import Feature from "./Feature";
 
 const Features = () => {
     return (
-        <div className="flex flex-col items-center justify-center h-[100%] w-[100%] overflow-hidden">
+        <div id="Features" className="flex flex-col items-center justify-center h-[100%] w-[100%] overflow-hidden p-10">
             <h1 className="text-4xl font-bold text-neutral-900 dark:text-foreground">
                 Workout Basics
             </h1>

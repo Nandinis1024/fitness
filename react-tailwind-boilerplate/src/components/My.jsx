@@ -7,7 +7,7 @@ import { images } from "@/constants";
 const My = () => {
 
     return (
-        <div className="h-full w-full">
+        <div id="Home" className="h-full w-full">
             <Navbar />
 
             <div className="flex items-center justify-center pt-20">
