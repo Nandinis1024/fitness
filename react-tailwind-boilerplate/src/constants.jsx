@@ -1,29 +1,36 @@
 export const features = [
-    {
-        title: "Pull Strength",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
-    },
-    {
-        title: "Push Strength",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
-    },
-    {
-        title: "Lower Body Strength",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
-    },
-    {
-        title: "Core Strength",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
-    },
-    {
-        title: "Skills and Flips",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
-    },
-    {
-        title: "Overall Personality Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
-    }
-]
+  {
+      source: "https://www.youtube.com/embed/-hSma-BRzoo",
+      title: "Pull Strength",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
+  },
+  {
+      source: "https://www.youtube.com/embed/M0uO8X3_tEA",
+      title: "Push Strength",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
+  },
+  {
+      source: "https://www.youtube.com/embed/YCGY0rz0H_s",
+      title: "Lower Body Strength",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
+  },
+  {
+      source: "https://www.youtube.com/embed/W4eKVKwf3rQ",
+      title: "Core Strength",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
+  },
+  {
+      source: "https://www.youtube.com/embed/wIynl3at0Rs",
+      title: "Skills and Flips",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
+  },
+  {
+      source: "https://www.youtube.com/embed/2euHNg3twUU",
+      title: "Overall Personality Development",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
+  }
+];
+
 
 export const testimonials = [
     {
