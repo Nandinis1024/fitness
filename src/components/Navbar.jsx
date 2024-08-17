@@ -16,7 +16,9 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [openMobileNav, setOpenMobileNav] = useState(false);
     const mobileNavRef = useRef(null); 
-
+    const navRef = useRef(null);
+    
+    console.log(openMobileNav)
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -28,10 +30,12 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (mobileNavRef.current && !mobileNavRef.current.contains(event.target)) {
+            if (mobileNavRef.current && !mobileNavRef.current.contains(event.target) && !navRef.current.contains(event.target)) {
                 setOpenMobileNav(false);
             }
         };
+
+        
 
         if (openMobileNav) {
             document.addEventListener('mousedown', handleClickOutside);
@@ -53,9 +57,9 @@ const Navbar = () => {
             >
                 <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
 
-                <div className="w-24 flex items-center gap-4 select-none">
-                    <div className="flex lg:hidden cursor-pointer" onClick={handleMobileNavToggle}>
-                        <HamburgerMenuIcon></HamburgerMenuIcon>
+                <div className="w-24 flex items-center gap-4 select-none" ref={navRef}>
+                    <div className="flex lg:hidden cursor-pointer">
+                        <HamburgerMenuIcon onClick={handleMobileNavToggle}></HamburgerMenuIcon>
                     </div>
                     LOGO
                 </div>
