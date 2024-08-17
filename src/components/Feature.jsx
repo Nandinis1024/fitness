@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { BorderBeam } from "./magicui/border-beam";
 import ShineBorder from "./magicui/shine-border";
@@ -6,6 +6,7 @@ import { FollowerPointerCard, FollowPointer } from "./ui/following-pointer";
 
 const Feature = ({ feature }) => {
     const [playVideo, setPlayVideo] = useState(false);
+    const videoRef = useRef(null);
 
     const handleMouseEnter = () => {
         setPlayVideo(true);
@@ -15,11 +16,24 @@ const Feature = ({ feature }) => {
         setPlayVideo(false);
     };
 
+    useEffect(() => {
+        if (videoRef.current) {
+            if (playVideo) {
+                videoRef.current.play().catch(error => {
+                    console.error("Error attempting to play video:", error);
+                });
+            } else {
+                videoRef.current.pause();
+                videoRef.current.currentTime = 0; 
+            }
+        }
+    }, [playVideo]);
+
     return (
         <FollowerPointerCard>
             <CardContainer className="inter-var">
                 <CardBody
-                    className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[29.5rem] h-auto border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
+                    className="bg-gray-50 dark:bg-black w-full h-full border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
                 >
                     <div
                         className="relative flex items-center justify-center w-[450px] h-[250px] overflow-hidden"
@@ -30,18 +44,18 @@ const Feature = ({ feature }) => {
                             className={`flex items-center justify-center w-full h-full absolute transition-opacity duration-300 ${playVideo ? 'opacity-0' : 'opacity-100'}`}
                         >
                             <div className="text-primary text-lg font-bold">
-                              {feature.title}
+                                {feature.title}
                             </div>
                         </div>
-                        <iframe
+                        <video
+                            ref={videoRef}
                             width="100%"
                             height="100%"
-                            src={`${feature.source}?autoplay=${playVideo ? 1 : 0}&mute=1`}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            className={`transition-opacity duration-300 ${playVideo ? 'opacity-100' : 'opacity-0'}`}
-                        ></iframe>
+                            src={`fitnes.mp4`}
+                            controls
+                            muted
+                            className={`w-full h-full transition-opacity duration-300 ${playVideo ? 'opacity-100' : 'opacity-0 object-cover my-2'}`}
+                        ></video>
                     </div>
                 </CardBody>
                 <BorderBeam size={250} duration={12} delay={9} />
