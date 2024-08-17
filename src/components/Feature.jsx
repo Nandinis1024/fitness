@@ -30,7 +30,6 @@ const Feature = ({ feature }) => {
     }, [playVideo]);
 
     return (
-        <FollowerPointerCard>
             <CardContainer className="inter-var">
                 <CardBody
                     className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:h-auto  h-[12rem] border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
@@ -60,7 +59,6 @@ const Feature = ({ feature }) => {
                 </CardBody>
                 <BorderBeam size={250} duration={12} delay={9} />
             </CardContainer>
-        </FollowerPointerCard>
     );
 };
 

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Button } from "./ui/button";
 
 const Course = () => {
@@ -53,28 +53,19 @@ const Course = () => {
   return (
     <div id="Courses" className="flex flex-col min-h-[100dvh] text-white pt-20">
       <div
-        id="player"
-        className="relative h-full w-full max-w-2xl mx-auto overflow-hidden rounded-lg aspect-video cursor-pointer"
+        id="player-container"
+        className="relative h-full w-full max-w-2xl mx-auto overflow-hidden rounded-lg aspect-video"
       >
-        <iframe
-          className="w-full h-full"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-        {/* <div className="absolute flex flex-col justify-between p-3 z-10">
-          <div className="text-lg font-semibold">Course: Web Development Masterclass</div>
-          <div className="flex justify-between items-center">
-            <div className="text-sm text-gray-400">Duration: 15m</div>
-            <button className="px-6 py-2 rounded-md bg-[#ff6b00] text-black font-medium hover:bg-[#d95b00] cursor-pointer">
-              Buy Now
-            </button>
-          </div>
-        </div> */}
+        <div
+          id="player"
+          className="absolute top-0 left-0 h-full w-full"
+        ></div>
+        <Button className="absolute bottom-4 right-4 text-black z-50 bg-[#ff6b00] hover:bg-[#d95b00] px-6 py-2 rounded-md">
+          Buy Now
+        </Button>
       </div>
       <div className="px-6 py-8 max-w-2xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4">Course Description</h2>
+        <h2 className="text-2xl sm:text-[3xl] font-bold mb-4">Course Description</h2>
         <p className="sm:text-lg text-muted-foreground">
           In this comprehensive web development masterclass, you'll learn everything you need to know to build modern,
           responsive websites and web applications. From HTML and CSS to JavaScript and React, this course covers all
@@ -86,5 +77,6 @@ const Course = () => {
 };
 
 export default Course;
+
 
 

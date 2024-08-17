@@ -2,9 +2,8 @@
 import * as React from "react"
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons"
 import useEmblaCarousel from "embla-carousel-react";
-
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils";
+import { Button } from "./button";
 
 const CarouselContext = React.createContext(null)
 
@@ -48,7 +47,7 @@ const Carousel = React.forwardRef((
 
   const scrollPrev = React.useCallback(() => {
     api?.scrollPrev()
-  }, [api])
+  }, [api,])
 
   const scrollNext = React.useCallback(() => {
     api?.scrollNext()
@@ -178,7 +177,7 @@ const CarouselNext = React.forwardRef(({ className, variant = "outline", size = 
       ref={ref}
       variant={variant}
       size={size}
-      className={cn("absolute h-8 w-8 rounded-full", orientation === "horizontal"
+      className={cn("absolute h-8 w-8 ", orientation === "horizontal"
         ? "-right-12 top-1/2 -translate-y-1/2"
         : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
       disabled={!canScrollNext}

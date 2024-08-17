@@ -17,6 +17,13 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'custom-pattern': `
+          linear-gradient(90deg, black calc(22px - 1px), transparent 1%) center / 22px 22px,
+          linear-gradient(black calc(22px - 1px), transparent 1%) center / 22px 22px,
+          white
+        `
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
