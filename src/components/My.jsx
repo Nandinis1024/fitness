@@ -39,19 +39,15 @@ const My = () => {
                 </div>
             </div>
 
-            <div className="my-4 mx-4 md:mx-8 items-center justify-center space-y-2">
-                <h1 className="text-2xl text-primary flex items-center justify-center gap-2">
-                    
+            <div className="my-4 mx-4 md:mx-8 flex flex-col items-center justify-center space-y-2">
+                <h1 className="text-2xl text-primary text-center flex items-center justify-center max-w-prose gap-2">
                     Join Our Telegram Community for best fitness advice and courses
                     {/* <span><FaTelegram className="h-5 w-5 hover:cursor-pointer" /></span> */}
                 </h1>
-
-                <p className="text-md text-muted-foreground flex items-center justify-center">
+                <p className="text-md text-center max-w-prose text-muted-foreground flex items-center justify-center">
                     *We do not offer medical advice, please consult your health professional if needed
                 </p>
             </div>
-
-
 
             <div className="py-12 bg-background my-16">
                 <div className="container mx-auto px-6">
