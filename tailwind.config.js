@@ -107,6 +107,9 @@ module.exports = {
         "scroll":
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+      fontFamily: {
+        'sans': ['Josefin Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

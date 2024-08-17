@@ -40,16 +40,16 @@ const My = () => {
             </div>
 
             <div className="my-4 mx-4 md:mx-8 items-center justify-center space-y-2">
-    <h1 className="text-2xl text-primary flex items-center justify-center gap-2">
-        
-        Join Our Telegram Community for best fitness advice and courses
-        {/* <span><FaTelegram className="h-5 w-5 hover:cursor-pointer" /></span> */}
-    </h1>
+                <h1 className="text-2xl text-primary flex items-center justify-center gap-2">
+                    
+                    Join Our Telegram Community for best fitness advice and courses
+                    {/* <span><FaTelegram className="h-5 w-5 hover:cursor-pointer" /></span> */}
+                </h1>
 
-    <h1 className="text-md text-muted-foreground flex items-center justify-center">
-        *We do not offer medical advice, please consult your health professional if needed
-    </h1>
-</div>
+                <p className="text-md text-muted-foreground flex items-center justify-center">
+                    *We do not offer medical advice, please consult your health professional if needed
+                </p>
+            </div>
 
 
 

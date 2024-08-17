@@ -33,7 +33,7 @@ const Feature = ({ feature }) => {
         <FollowerPointerCard>
             <CardContainer className="inter-var">
                 <CardBody
-                    className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[29.5rem] sm:h-auto  h-[12rem] border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
+                    className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:h-auto  h-[12rem] border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
                 >
                     <div
                         className="relative flex items-center justify-center sm:w-[450px] sm:h-[250px] w-[350px] h-[200px] overflow-hidden"
@@ -43,7 +43,7 @@ const Feature = ({ feature }) => {
                         <div
                             className={`flex items-center justify-center w-full h-full absolute transition-opacity duration-300 ${playVideo ? 'opacity-0' : 'opacity-100'}`}
                         >
-                            <div className="text-primary text-lg font-bold">
+                            <div className="text-primary text-2xl font-bold">
                                 {feature.title}
                             </div>
                         </div>
