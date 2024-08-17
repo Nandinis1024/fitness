@@ -19,10 +19,10 @@ const Feature = ({ feature }) => {
         <FollowerPointerCard>
             <CardContainer className="inter-var">
                 <CardBody
-                    className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[29.5rem] h-auto border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
+                    className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[29.5rem] sm:h-auto  h-[12rem] border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
                 >
                     <div
-                        className="relative flex items-center justify-center w-[450px] h-[250px] overflow-hidden"
+                        className="relative flex items-center justify-center sm:w-[450px] sm:h-[250px] w-[350px] h-[200px] overflow-hidden"
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
@@ -51,3 +51,4 @@ const Feature = ({ feature }) => {
 };
 
 export default Feature;
+
