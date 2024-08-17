@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="bg-background dark" style={{
       background: `
-      linear-gradient(90deg, black calc(22px - 1px), transparent 90%) center / 22px 22px,
+      linear-gradient(90deg, black calc(22px - 1px), transparent 100%) center / 22px 22px,
       linear-gradient(black calc(22px - 1px), transparent 100%) center / 22px 22px,
       white
       `
