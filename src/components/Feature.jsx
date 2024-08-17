@@ -38,11 +38,12 @@ const Feature = ({ feature }) => {
                         className="relative flex items-center justify-center sm:w-[450px] sm:h-[250px] w-[350px] h-[200px] overflow-hidden"
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
+                        onClick={handleMouseEnter}
                     >
                         <div
                             className={`flex items-center justify-center w-full h-full absolute transition-opacity duration-300 ${playVideo ? 'opacity-0' : 'opacity-100'}`}
                         >
-                            <div className="text-primary text-2xl font-bold">
+                            <div className="text-primary text-2xl font-bold items-center justify-center">
                                 {feature.title}
                             </div>
                         </div>

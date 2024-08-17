@@ -26,7 +26,7 @@ export const features = [
   },
   {
       source: "https://www.youtube.com/embed/2euHNg3twUU",
-      title: "Overall Personality Development",
+      title: "Personality Development",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
   }
 ];
