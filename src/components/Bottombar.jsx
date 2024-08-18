@@ -15,8 +15,8 @@ const Bottombar = () => {
 
 
     return (
-        <div className={`fixed z-30 bottom-0 left-0 right-0 ${scrolled ? "bg-black/90" : "bg-transparent"} `}>
-            <div className="p-5  flex items-center justify-between text-primary-foreground">
+        <div className={`fixed z-30 bottom-0 left-0 right-0 ${scrolled ? "bg-black/90" : "bg-black/90"} `}>
+            <div className="px-5 py-3 flex items-center justify-between text-primary-foreground">
                 <div className="flex items-center">
                     <p>Join our LIVE CLASS <span className="hidden md:inline-flex">and learn how to trade in a simplified manner.</span></p>
                 </div>

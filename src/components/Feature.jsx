@@ -39,6 +39,7 @@ const Feature = ({ feature }) => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                         onClick={handleMouseEnter}
+                        onTouchStart={handleMouseEnter}  
                     >
                         <div
                             className={`flex items-center justify-center w-full h-full absolute transition-opacity duration-300 ${playVideo ? 'opacity-0' : 'opacity-100'}`}

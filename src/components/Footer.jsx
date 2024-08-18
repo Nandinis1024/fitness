@@ -34,6 +34,9 @@ const Footer = () => {
                             <FaFacebook className="hover:text-primary h-6 w-6" />
                         </a>
                     </div>
+                    <div className="mt-8 text-center text-sm">
+                        &copy; {new Date().getFullYear()} Prateek Varshney. All rights reserved.
+                    </div>
                 </div>
                 <div className="w-full sm:w-1/3 text-center sm:text-right">
                     <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
@@ -41,9 +44,6 @@ const Footer = () => {
                     <p>Phone: (123) 456-7890</p>
                     <p>Address: 123 Example St, City, Country</p>
                 </div>
-            </div>
-            <div className="mt-8 text-center text-sm">
-                &copy; {new Date().getFullYear()} Prateek Varshney. All rights reserved.
             </div>
         </footer>
     );

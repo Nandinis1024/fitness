@@ -8,8 +8,7 @@ const options = [
     'Features',
     'Courses',
     'Why Join Us?',
-    'Contact',
-    'Open Demo'
+    'Contact'
 ];
 
 const Navbar = () => {
@@ -17,7 +16,8 @@ const Navbar = () => {
     const [openMobileNav, setOpenMobileNav] = useState(false);
     const mobileNavRef = useRef(null); 
     const navRef = useRef(null);
-
+    const [selected, setSelected] = useState(window.location.href.split('#')[1]);
+    
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -52,7 +52,7 @@ const Navbar = () => {
     return (
         <>
             <div 
-                className={`flex justify-between items-center px-4 text-foreground py-4 mb-10 fixed top-0 left-0 right-0 z-30 transition-colors duration-300 ${scrolled || openMobileNav ? 'bg-black/90 shadow-md' : 'bg-transparent'}`}
+                className={`flex justify-between items-center px-4 text-foreground py-4 mb-10 fixed top-0 left-0 right-0 z-30 transition-colors duration-300 ${scrolled || openMobileNav ? 'bg-black/90 shadow-md' : 'bg-transparent'} select-none`}
             >
                 <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
 
@@ -65,7 +65,7 @@ const Navbar = () => {
 
                 <div className="space-x-10 hidden lg:flex">
                     {options && options.map((option, index) => (
-                        <div key={index} className="hover:cursor-pointer hover:text-primary">
+                        <div key={index} className={`hover:cursor-pointer hover:text-primary ${selected === option ? 'text-primary': ''}`} onClick={() => setSelected(option)}>
                             <a href={`#${option}`}>{option}</a>
                         </div>
                     ))}

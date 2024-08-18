@@ -18,11 +18,11 @@ const Course = () => {
         width: '640',
         videoId: 'PLzltoJu-08',
         playerVars: {
-          'playsinline': 1
+          playsinline: 1
         },
         events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
+          onReady: onPlayerReady,
+          onStateChange: onPlayerStateChange
         }
       });
     };
@@ -51,7 +51,10 @@ const Course = () => {
   };
 
   return (
-    <div id="Courses" className="flex flex-col min-h-[100dvh] text-white pt-20">
+    <div
+      id="Courses"
+      className="flex flex-col w-[90%] mx-auto text-white pt-20 sm:h-auto h-[90vh] justify-between"
+    >
       <div
         id="player-container"
         className="relative h-full w-full max-w-2xl mx-auto overflow-hidden rounded-lg aspect-video"
@@ -77,6 +80,3 @@ const Course = () => {
 };
 
 export default Course;
-
-
-
