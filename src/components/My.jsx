@@ -49,7 +49,7 @@ const My = () => {
                 </p>
             </div>
 
-            <div className="py-12 bg-background my-16">
+            <div className="py-12 my-16">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col md:flex-row items-center justify-center md:justify-between space-y-6 md:space-y-0 md:space-x-6">
                         <div className="w-full md:w-7/12 text-center md:text-left">
