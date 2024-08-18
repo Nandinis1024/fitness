@@ -17,8 +17,7 @@ const Navbar = () => {
     const [openMobileNav, setOpenMobileNav] = useState(false);
     const mobileNavRef = useRef(null); 
     const navRef = useRef(null);
-    
-    console.log(openMobileNav)
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);

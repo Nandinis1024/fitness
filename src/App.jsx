@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Testimonials from './components/Testimonials'
 import { Spotlight } from './components/ui/spotlight'
 import Intro from './components/Intro'
+import Bottombar from './components/Bottombar'
 
 function App() {
 
@@ -20,12 +21,13 @@ function App() {
   }}>
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20 fixed"
         fill="white" />
-      {/* <Intro /> */}
+      <Intro />
       <My />
       <Features />
       <Course />
       <Testimonials />
       <Footer />
+      <Bottombar />
     </div>
   )
 }
