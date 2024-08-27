@@ -135,8 +135,8 @@ const Intro = ()=> {
                     : 
                     <div className="flex flex-row justify-center xl:justify-between">
                         <div className="space-y-5 pt-10">
-                            <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Unleash Your <span  className="text-blue-500"> Trading</span> Potential</h1>
-                            <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned trading expert, is here to guide you on your journey to a successfull, Options Trading career.</p>
+                            <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Unleash Your <span  className="text-blue-500"> Fitness</span> Potential</h1>
+                            <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned fitness trainer, is here to guide you on your journey to a healthier, stronger you.</p>
                             <div className="flex space-x-2">
                             <a href="#Home"><Button className="text-md bg-blue-500">Explore</Button></a>
                             <a href="#Home"><Button className="text-muted-foreground text-md" variant="primary">Learn More</Button></a>

@@ -63,12 +63,17 @@ const Course = () => {
           id="player"
           className="absolute top-0 left-0 h-full w-full"
         ></div>
-        <Button className="absolute bottom-4 right-4 text-black z-50 bg-[#ff6b00] hover:bg-[#d95b00] px-6 py-2 rounded-md">
+        {/* <Button className="absolute bottom-4 right-4 text-black z-50 bg-[#ff6b00] hover:bg-[#d95b00] px-6 py-2 rounded-md">
           Buy Now
-        </Button>
+        </Button> */}
       </div>
       <div className="px-6 py-8 max-w-2xl mx-auto">
-        <h2 className="text-2xl sm:text-[3xl] font-bold mb-4">Course Description</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-2xl sm:text-[3xl] font-bold">Course Description</h2>
+          <Button className="text-black z-50 bg-[#ff6b00] hover:bg-[#d95b00] px-6 py-2 rounded-md">
+            Buy Now
+          </Button>
+        </div>
         <p className="sm:text-lg text-muted-foreground">
           In this comprehensive web development masterclass, you'll learn everything you need to know to build modern,
           responsive websites and web applications. From HTML and CSS to JavaScript and React, this course covers all

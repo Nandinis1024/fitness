@@ -17,7 +17,7 @@ const Navbar = () => {
     const mobileNavRef = useRef(null); 
     const navRef = useRef(null);
     const [selected, setSelected] = useState(window.location.href.split('#')[1]);
-    
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -33,8 +33,6 @@ const Navbar = () => {
                 setOpenMobileNav(false);
             }
         };
-
-        
 
         if (openMobileNav) {
             document.addEventListener('mousedown', handleClickOutside);
@@ -64,11 +62,15 @@ const Navbar = () => {
                 </div>
 
                 <div className="space-x-10 hidden lg:flex">
-                    {options && options.map((option, index) => (
-                        <div key={index} className={`hover:cursor-pointer hover:text-primary ${selected === option ? 'text-primary': ''}`} onClick={() => setSelected(option)}>
+                    {options.map((option, index) => (
+                        <div key={index} className={`hover:cursor-pointer hover:text-primary ${selected === option ? 'text-primary' : ''}`} onClick={() => setSelected(option)}>
                             <a href={`#${option}`}>{option}</a>
                         </div>
                     ))}
+                    {/* Manually add Options Trading */}
+                    <div className="hover:cursor-pointer hover:text-primary">
+                        <a href={`https://optiontradingonly.in`}>Options Trading</a>
+                    </div>
                 </div>
 
                 <div className="flex space-x-6 w-24">
@@ -80,11 +82,15 @@ const Navbar = () => {
 
             <div ref={mobileNavRef} className={`${openMobileNav ? 'flex' : 'hidden'} transition-all fixed top-10 select-none bg-black/90 text-primary-foreground w-screen justify-center z-30 py-6`}>
                 <div className="space-y-6">
-                    {options && options.map((option, index) => (
-                    <div key={index} className="hover:cursor-pointer hover:text-primary">
-                        <a href={`#${option}`}>{option}</a>
-                    </div>
+                    {options.map((option, index) => (
+                        <div key={index} className="hover:cursor-pointer hover:text-primary">
+                            <a href={`#${option}`}>{option}</a>
+                        </div>
                     ))}
+                    {/* Options Trading link for mobile nav */}
+                    <div className="hover:cursor-pointer hover:text-primary flex gap-2">
+                        <a href={`https://optiontradingonly.in`}>Options Trading</a>
+                    </div>
                 </div>
             </div>
         </>

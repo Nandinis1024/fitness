@@ -40,9 +40,22 @@ const Footer = () => {
                 </div>
                 <div className="w-full sm:w-1/3 text-center sm:text-right">
                     <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
+                    <div className="mb-4">
+                        <div className="flex justify-center sm:justify-end">
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                className="p-2 rounded-l-lg bg-white text-black focus:outline-none"
+                            />
+                            <button className="p-2 bg-primary text-white rounded-r-lg hover:bg-primary-dark">
+                                Send
+                            </button>
+                        </div>
+                    </div>
                     <p>Email: info@example.com</p>
                     <p>Phone: (123) 456-7890</p>
                     <p>Address: 123 Example St, City, Country</p>
+
                 </div>
             </div>
         </footer>
