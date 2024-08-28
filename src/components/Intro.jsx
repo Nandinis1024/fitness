@@ -44,7 +44,7 @@ const Intro = ()=> {
                 <CardContent className="flex w-full h-[650px] items-center justify-center">
                   {index === 0 ? 
                     <div className="flex flex-row justify-center xl:justify-between">
-                        <div className="md:space-y-5 md:pt-10">
+                        <div className="space-y-5 md:pt-10">
                             <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Unleash Your <span  className="text-orange-500"> Fitness</span> Potential</h1>
                             <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned fitness trainer, is here to guide you on your journey to a healthier, stronger you.</p>
                             <div className="flex space-x-2 pt-5">
@@ -62,7 +62,7 @@ const Intro = ()=> {
                     </div>
                     : 
                     <div className="flex flex-row justify-center xl:justify-between">
-                        <div className="md:space-y-5 md:pt-10">
+                        <div className="space-y-5 md:pt-10">
                             <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Strength Begins with <span className="text-blue-500"> Single </span>Step</h1>
                             <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned fitness trainer, is here to guide you on your journey to a healthier, stronger you.</p>
                             
@@ -71,8 +71,8 @@ const Intro = ()=> {
                                 <div className="flex items-center">
                                   <div className="flex flex-col justify-center items-center">
                                     <FiUsers className="text-xl md:text-4xl mb-2" />
-                                    <div className="text-md md:text-2xl font-bold">10k+</div>
-                                    <div className="text-sm md:text-lg text-blue-500">Students Mentored</div>
+                                    <div className="text-lg md:text-2xl font-bold">10k+</div>
+                                    <div className="text-md md:text-lg text-blue-500">Students Mentored</div>
                                   </div>
                                 </div>
                               </div>
@@ -80,8 +80,8 @@ const Intro = ()=> {
                                 <div className="flex items-center">
                                   <div className="flex flex-col justify-center items-center">
                                     <FiYoutube className="text-xl md:text-4xl mb-2"/>
-                                    <div className="text-md md:text-2xl font-bold">1 Lakh+</div>
-                                    <div className="text-sm md:text-lg text-blue-500">Youtube Subscribers</div>
+                                    <div className="text-lg md:text-2xl font-bold">1 Lakh+</div>
+                                    <div className="text-md md:text-lg text-blue-500">Youtube Subscribers</div>
                                   </div>
                                 </div>
                               </div>
