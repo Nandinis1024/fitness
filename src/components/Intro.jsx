@@ -1,6 +1,7 @@
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { FiUsers, FiYoutube } from 'react-icons/fi';
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -46,12 +47,12 @@ const Intro = ()=> {
                         <div className="space-y-5 pt-10">
                             <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Unleash Your <span  className="text-orange-500"> Fitness</span> Potential</h1>
                             <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned fitness trainer, is here to guide you on your journey to a healthier, stronger you.</p>
-                            <div className="flex space-x-2">
-                            <a href="#Home"><Button className="text-md">Explore</Button></a>
-                            <a href="#Home"><Button className="text-muted-foreground text-md" variant="primary">Learn More</Button></a>
-                              </div>
-                              <div className="flex space-x-5 cursor-pointer">
-                            <svg width="150" height="150" viewBox="0 0 540 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div className="flex space-x-2 pt-5">
+                              <a href="#Home"><Button className="text-md">Explore</Button></a>
+                              <a href="#Home"><Button className="text-muted-foreground text-md" variant="primary">Learn More</Button></a>
+                            </div>
+                            <div className="flex space-x-5 cursor-pointer">
+                            {/* <svg width="150" height="150" viewBox="0 0 540 156" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M520 156H20C9.005 156 0 147.22 0 136.5V19.5C0 8.77989 9.005 1.52588e-05 20 1.52588e-05H520C530.995 1.52588e-05 540 8.77989 540 19.5V136.5C540 147.22 530.995 156 520 156Z" fill="black"/>
                               <path d="M520 3.12488C529.26 3.12488 536.795 10.4715 536.795 19.5V136.5C536.795 145.529 529.26 152.875 520 152.875H20C10.74 152.875 3.205 145.529 3.205 136.5V19.5C3.205 10.4715 10.74 3.12488 20 3.12488H520ZM520 1.52588e-05H20C9.005 1.52588e-05 0 8.77989 0 19.5V136.5C0 147.22 9.005 156 20 156H520C530.995 156 540 147.22 540 136.5V19.5C540 8.77989 530.995 1.52588e-05 520 1.52588e-05Z" fill="#A6A6A6"/>
                               <path d="M41.74 29.4011C40.565 30.6003 39.885 32.4675 39.885 34.8855V121.134C39.885 123.552 40.565 125.419 41.74 126.618L42.03 126.882L91.6 78.5703V77.4296L42.03 29.1183L41.74 29.4011Z" fill="url(#paint0_linear_1903_252)"/>
@@ -121,7 +122,7 @@ const Intro = ()=> {
                                 <path d="M422.764 103.845C422.764 109.598 421.076 114.321 417.708 118.014C414.176 121.816 409.488 123.712 403.644 123.712C398.012 123.712 393.528 121.891 390.184 118.248C386.84 114.605 385.168 110.007 385.168 104.465C385.168 98.6661 386.888 93.9159 390.34 90.2226C393.784 86.5254 398.432 84.6768 404.276 84.6768C409.908 84.6768 414.44 86.4981 417.86 90.1446C421.132 93.6819 422.764 98.2488 422.764 103.845ZM413.916 104.114C413.916 100.663 413.16 97.7028 411.628 95.2341C409.84 92.2467 407.284 90.7569 403.972 90.7569C400.544 90.7569 397.94 92.2506 396.152 95.2341C394.62 97.7067 393.864 100.714 393.864 104.27C393.864 107.722 394.62 110.682 396.152 113.147C397.996 116.134 400.572 117.624 403.896 117.624C407.152 117.624 409.708 116.103 411.552 113.069C413.124 110.553 413.916 107.562 413.916 104.114Z" fill="white"/>
                                 <path d="M450.484 92.7537C449.64 92.6016 448.74 92.5236 447.796 92.5236C444.796 92.5236 442.476 93.6273 440.844 95.8386C439.424 97.7886 438.712 100.253 438.712 103.229V122.866H430.188L430.268 97.227C430.268 92.9136 430.16 88.9863 429.948 85.4451H437.376L437.688 92.6055H437.924C438.824 90.1446 440.244 88.1634 442.188 86.6775C444.088 85.3398 446.14 84.6729 448.352 84.6729C449.14 84.6729 449.852 84.7275 450.484 84.825V92.7537Z" fill="white"/>
                                 <path d="M488.624 102.383C488.624 103.873 488.524 105.128 488.312 106.154H462.728C462.828 109.851 464.064 112.679 466.44 114.629C468.596 116.372 471.384 117.246 474.808 117.246C478.596 117.246 482.052 116.657 485.16 115.475L486.496 121.247C482.864 122.791 478.576 123.56 473.628 123.56C467.676 123.56 463.004 121.852 459.604 118.439C456.212 115.027 454.512 110.444 454.512 104.695C454.512 99.0522 456.092 94.3527 459.256 90.6048C462.568 86.6034 467.044 84.6027 472.676 84.6027C478.208 84.6027 482.396 86.6034 485.24 90.6048C487.492 93.7833 488.624 97.7145 488.624 102.383ZM480.492 100.226C480.548 97.7613 479.992 95.6319 478.836 93.834C477.36 91.5213 475.092 90.3669 472.04 90.3669C469.252 90.3669 466.984 91.494 465.252 93.756C463.832 95.5539 462.988 97.7106 462.728 100.222H480.492V100.226Z" fill="white"/>
-                                </svg>
+                                </svg> */}
                             </div>
                         </div>
 
@@ -135,14 +136,32 @@ const Intro = ()=> {
                     : 
                     <div className="flex flex-row justify-center xl:justify-between">
                         <div className="space-y-5 pt-10">
-                            <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Unleash Your <span  className="text-blue-500"> Fitness</span> Potential</h1>
+                            <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Strength Begins with <span  className="text-blue-500"> Single </span>Step</h1>
                             <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned fitness trainer, is here to guide you on your journey to a healthier, stronger you.</p>
-                            <div className="flex space-x-2">
-                            <a href="#Home"><Button className="text-md bg-blue-500">Explore</Button></a>
-                            <a href="#Home"><Button className="text-muted-foreground text-md" variant="primary">Learn More</Button></a>
+                            
+                            <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 items-center">
+                              <div className="bg-transparent shadow-lg rounded-full w-40 h-20 md:w-64 flex flex-col pt-10">
+                                <div className="flex items-center">
+                                  <div className="flex flex-col justify-center items-center">
+                                    <FiUsers className="text-xl md:text-4xl mb-2" />
+                                    <div className="text-md md:text-2xl font-bold">10k+</div>
+                                    <div className="text-sm md:text-lg text-blue-500">Students Mentored</div>
+                                  </div>
+                                </div>
                               </div>
-                              <div className="flex space-x-5 cursor-pointer">
-                            <svg width="150" height="150" viewBox="0 0 540 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <div className="bg-transparent shadow-lg rounded-full w-40 h-20 md:w-64 flex flex-col pt-10">
+                                <div className="flex items-center">
+                                  <div className="flex flex-col justify-center items-center">
+                                    <FiYoutube className="text-xl md:text-4xl mb-2"/>
+                                    <div className="text-md md:text-2xl font-bold">1 Lakh+</div>
+                                    <div className="text-sm md:text-lg text-blue-500">Youtube Subscribers</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                           
+                            <div className="flex space-x-5 cursor-pointer">
+                            {/* <svg width="150" height="150" viewBox="0 0 540 156" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M520 156H20C9.005 156 0 147.22 0 136.5V19.5C0 8.77989 9.005 1.52588e-05 20 1.52588e-05H520C530.995 1.52588e-05 540 8.77989 540 19.5V136.5C540 147.22 530.995 156 520 156Z" fill="black"/>
                               <path d="M520 3.12488C529.26 3.12488 536.795 10.4715 536.795 19.5V136.5C536.795 145.529 529.26 152.875 520 152.875H20C10.74 152.875 3.205 145.529 3.205 136.5V19.5C3.205 10.4715 10.74 3.12488 20 3.12488H520ZM520 1.52588e-05H20C9.005 1.52588e-05 0 8.77989 0 19.5V136.5C0 147.22 9.005 156 20 156H520C530.995 156 540 147.22 540 136.5V19.5C540 8.77989 530.995 1.52588e-05 520 1.52588e-05Z" fill="#A6A6A6"/>
                               <path d="M41.74 29.4011C40.565 30.6003 39.885 32.4675 39.885 34.8855V121.134C39.885 123.552 40.565 125.419 41.74 126.618L42.03 126.882L91.6 78.5703V77.4296L42.03 29.1183L41.74 29.4011Z" fill="url(#paint0_linear_1903_252)"/>
@@ -212,7 +231,7 @@ const Intro = ()=> {
                                 <path d="M422.764 103.845C422.764 109.598 421.076 114.321 417.708 118.014C414.176 121.816 409.488 123.712 403.644 123.712C398.012 123.712 393.528 121.891 390.184 118.248C386.84 114.605 385.168 110.007 385.168 104.465C385.168 98.6661 386.888 93.9159 390.34 90.2226C393.784 86.5254 398.432 84.6768 404.276 84.6768C409.908 84.6768 414.44 86.4981 417.86 90.1446C421.132 93.6819 422.764 98.2488 422.764 103.845ZM413.916 104.114C413.916 100.663 413.16 97.7028 411.628 95.2341C409.84 92.2467 407.284 90.7569 403.972 90.7569C400.544 90.7569 397.94 92.2506 396.152 95.2341C394.62 97.7067 393.864 100.714 393.864 104.27C393.864 107.722 394.62 110.682 396.152 113.147C397.996 116.134 400.572 117.624 403.896 117.624C407.152 117.624 409.708 116.103 411.552 113.069C413.124 110.553 413.916 107.562 413.916 104.114Z" fill="white"/>
                                 <path d="M450.484 92.7537C449.64 92.6016 448.74 92.5236 447.796 92.5236C444.796 92.5236 442.476 93.6273 440.844 95.8386C439.424 97.7886 438.712 100.253 438.712 103.229V122.866H430.188L430.268 97.227C430.268 92.9136 430.16 88.9863 429.948 85.4451H437.376L437.688 92.6055H437.924C438.824 90.1446 440.244 88.1634 442.188 86.6775C444.088 85.3398 446.14 84.6729 448.352 84.6729C449.14 84.6729 449.852 84.7275 450.484 84.825V92.7537Z" fill="white"/>
                                 <path d="M488.624 102.383C488.624 103.873 488.524 105.128 488.312 106.154H462.728C462.828 109.851 464.064 112.679 466.44 114.629C468.596 116.372 471.384 117.246 474.808 117.246C478.596 117.246 482.052 116.657 485.16 115.475L486.496 121.247C482.864 122.791 478.576 123.56 473.628 123.56C467.676 123.56 463.004 121.852 459.604 118.439C456.212 115.027 454.512 110.444 454.512 104.695C454.512 99.0522 456.092 94.3527 459.256 90.6048C462.568 86.6034 467.044 84.6027 472.676 84.6027C478.208 84.6027 482.396 86.6034 485.24 90.6048C487.492 93.7833 488.624 97.7145 488.624 102.383ZM480.492 100.226C480.548 97.7613 479.992 95.6319 478.836 93.834C477.36 91.5213 475.092 90.3669 472.04 90.3669C469.252 90.3669 466.984 91.494 465.252 93.756C463.832 95.5539 462.988 97.7106 462.728 100.222H480.492V100.226Z" fill="white"/>
-                                </svg>
+                                </svg> */}
                             </div>
                         </div>
 
