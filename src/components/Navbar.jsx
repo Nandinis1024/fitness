@@ -69,7 +69,7 @@ const Navbar = () => {
                     ))}
                     {/* Manually add Options Trading */}
                     <div className="hover:cursor-pointer hover:text-primary">
-                        <a href={`https://optiontradingonly.in`}>Options Trading</a>
+                        <a href={`https://optiontradingonly.in`} target="_blank">Finance</a>
                     </div>
                 </div>
 
@@ -89,7 +89,7 @@ const Navbar = () => {
                     ))}
                     {/* Options Trading link for mobile nav */}
                     <div className="hover:cursor-pointer hover:text-primary flex gap-2">
-                        <a href={`https://optiontradingonly.in`} target="_blank">Options Trading</a>
+                        <a href={`https://optiontradingonly.in`} target="_blank">Finance</a>
                     </div>
                 </div>
             </div>

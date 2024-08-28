@@ -30,10 +30,12 @@ const My = () => {
                             <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
                                 Transform Your Fitness Journey with <span className="text-primary">Prateek's</span> Expert Coaching <br /> Personalized Plans, Proven Results!
                             </motion.p>
-                            <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-foreground mx-auto text-center rounded-full relative mt-4">
-                            <span>Transform Yourself →</span>
-                            <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-                            </button>
+                            <a href="#Courses">
+                                <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-foreground mx-auto text-center rounded-full relative mt-4">
+                                    <span>Transform Yourself →</span>
+                                    <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+                                </button>
+                            </a>
                         </motion.div>
                     </ImagesSlider>
                 </div>

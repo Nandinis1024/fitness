@@ -48,8 +48,8 @@ const Intro = ()=> {
                             <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Unleash Your <span  className="text-orange-500"> Fitness</span> Potential</h1>
                             <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned fitness trainer, is here to guide you on your journey to a healthier, stronger you.</p>
                             <div className="flex space-x-2 pt-5">
-                              <a href="#Home"><Button className="text-md">Explore</Button></a>
-                              <a href="#Home"><Button className="text-muted-foreground text-md" variant="primary">Learn More</Button></a>
+                              <a href="#Courses"><Button className="text-md">Explore</Button></a>
+                              <a href="#Courses"><Button className="text-muted-foreground text-md" variant="primary">Learn More</Button></a>
                             </div>
                             <div className="flex space-x-5 cursor-pointer">
                             {/* <svg width="150" height="150" viewBox="0 0 540 156" fill="none" xmlns="http://www.w3.org/2000/svg">
