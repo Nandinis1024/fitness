@@ -2,7 +2,6 @@ import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FiUsers, FiYoutube } from 'react-icons/fi';
-
 import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
@@ -13,6 +12,9 @@ import {
 } from "@/components/ui/carousel"
 import { Button } from "./ui/button"
 import TypingAnimation from "./magicui/typing-animation"
+import no from "/no.jpg"
+import img1 from "/prateek-intro-1.jpg"
+import img2 from "/prateek-intro-2.jpg"
 
 const bounceAnimation = `
   @keyframes bounceHorizontal {
@@ -54,7 +56,7 @@ const Intro = ()=> {
                         </div>
 
                         <img
-                          src="https://www.primefitnessusa.com/cdn/shop/files/ro-t8-handles-banner_1920x820_crop_right.jpg?v=1626980099"
+                          src={img1}
                           alt="Prateek Varshney"
                           className="rounded-full object-cover hidden lg:flex lg:h-[450px] lg:w-[460px] xl:h-[514px] xl:w-[500px]"
                           style={{ aspectRatio: "400/400", objectFit: "cover"}}
@@ -89,7 +91,7 @@ const Intro = ()=> {
                         </div>
 
                         <img
-                          src="https://www.primefitnessusa.com/cdn/shop/files/ro-t8-handles-banner_1920x820_crop_right.jpg?v=1626980099"
+                          src={img2}
                           width="500"
                           height="400"
                           alt="Prateek Varshney"

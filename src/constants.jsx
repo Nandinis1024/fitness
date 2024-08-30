@@ -1,31 +1,38 @@
+import push from "/push.mp4";
+import pull from "/pull.mp4";
+import lower from "/lower.mp4";
+import core from "/core.mp4";
+import flips from "/flips.mp4";
+import personality from "/personality.mp4";
+
 export const features = [
   {
-      source: "https://www.youtube.com/embed/-hSma-BRzoo",
+      source: pull,
       title: "Pull Strength",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
   },
   {
-      source: "https://www.youtube.com/embed/M0uO8X3_tEA",
+      source: push,
       title: "Push Strength",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
   },
   {
-      source: "https://www.youtube.com/embed/YCGY0rz0H_s",
+      source: lower,
       title: "Lower Body Strength",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
   },
   {
-      source: "https://www.youtube.com/embed/W4eKVKwf3rQ",
+      source: core,
       title: "Core Strength",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
   },
   {
-      source: "https://www.youtube.com/embed/wIynl3at0Rs",
+      source: flips,
       title: "Skills and Flips",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
   },
   {
-      source: "https://www.youtube.com/embed/2euHNg3twUU",
+      source: personality,
       title: "Personality Development",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada erat nec mauris egestas placerat. Sed sem nibh, varius nec sapien sit amet, hendrerit varius nulla."
   }

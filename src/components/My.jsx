@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import { ImagesSlider } from "./ui/images-slider";
 import { images } from "@/constants";
+import img3 from "/prateek-intro-3.jpg";
 
 const My = () => {
 
@@ -64,7 +65,7 @@ const My = () => {
                             </p>
                         </div>
                         <div className="flex-shrink-0 w-full md:w-5/12 h-64 rounded-full overflow-hidden">
-                            <img className="w-full h-full object-cover" src="https://media.istockphoto.com/id/675179390/photo/muscular-trainer-writing-on-clipboard.jpg?s=612x612&w=0&k=20&c=9NKx1AwVMpPY0YBlk5H-hxx2vJSCu1Wc78BKRM9wFq0=" alt="Prateek" />
+                            <img className="w-full h-full object-cover" src={img3} alt="Prateek" />
                         </div>
                     </div>
                 </div>

@@ -9,34 +9,42 @@ const Feature = ({ feature }) => {
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
     const handleMouseEnter = () => {
-        if (!isMobile) {
+        if(!isMobile){
             setPlayVideo(true);
         }
     };
 
     const handleMouseLeave = () => {
-        if (!isMobile) {
+        if(!isMobile){
             setPlayVideo(false);
         }
+        
     };
 
     useEffect(() => {
         if (videoRef.current) {
-            if (playVideo) {
+            if (isMobile) {
+                videoRef.current.loop = true;  // Set loop for mobile devices
                 videoRef.current.play().catch((error) => {
                     console.error("Error attempting to play video:", error);
                 });
             } else {
-                videoRef.current.pause();
-                videoRef.current.currentTime = 0;
+                if (playVideo) {
+                    videoRef.current.play().catch((error) => {
+                        console.error("Error attempting to play video:", error);
+                    });
+                } else {
+                    videoRef.current.pause();
+                    videoRef.current.currentTime = 0;
+                }
             }
         }
-    }, [playVideo]);
+    }, [playVideo, isMobile]);
 
     return (
         <CardContainer className="inter-var">
             <CardBody
-                className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:h-auto h-[12rem] border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center"
+                className="bg-gray-50 dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:h-auto h-[12rem] border dark:hover:shadow-2xl dark:hover:shadow-orange-500/[0.1] flex items-center justify-center cursor-pointer"
             >
                 <div
                     className="relative flex items-center justify-center sm:w-[450px] sm:h-[250px] w-[350px] h-[200px] overflow-hidden"
@@ -52,9 +60,9 @@ const Feature = ({ feature }) => {
                         ref={videoRef}
                         width="100%"
                         height="100%"
-                        src={`fitnes.mp4`}
+                        src={feature.source}
                         muted
-                        className="w-full h-full transition-opacity duration-300 opacity-100"
+                        className="w-fit h-fit transition-opacity duration-300 opacity-100"
                     ></video>
                 </div>
             </CardBody>
