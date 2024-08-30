@@ -63,6 +63,7 @@ const Feature = ({ feature }) => {
                         src={feature.source}
                         muted
                         className="w-fit h-fit transition-opacity duration-300 opacity-100"
+                        playsInline
                     ></video>
                 </div>
             </CardBody>
