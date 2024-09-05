@@ -89,6 +89,14 @@ const Course = () => {
     setIsRazorpayLoaded(prev => prev + 1);
   };
 
+  const handleMail = () => {
+    const email = 'prateekvarshney1224@gmail.com';
+    const subject = 'Hello!';
+    const body = 'Lets Transform';
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  }
+
 
   return (
     <div
@@ -143,7 +151,7 @@ const Course = () => {
 
         We will be connected through Whatsapp/Instagram directly during the course of the training program to provide you the most convenient experience.<br/><br/>
 
-        <span className="text-gray-300">Simply make the payment by clicking on Buy Now and share the screenshot at mail ID or at instagram.</span><br/>
+        <span className="text-gray-300">Simply make the payment by clicking on Buy Now and share the screenshot at <span className="cursor-pointer  underline" onClick={handleMail} > mail ID </span> or at <span className="underline"><a href="https://www.instagram.com/this_is_varshney">instagram.</a></span></span><br/>
         </p>
       </div>
       <div className="hidden">{isRazorpayLoaded}</div>
@@ -153,4 +161,3 @@ const Course = () => {
 };
 
 export default Course;
-111

@@ -15,7 +15,7 @@ const Footer = () => {
         <footer id="Contact" className="bg-black text-foreground py-8 mt-10">
             <div className="container mx-auto flex justify-between flex-wrap">
                 <div className="flex flex-col gap-10">
-                    <div className="w-full sm:w-1/3 text-center sm:text-left mb-4 sm:mb-0">
+                    <div className="w-full sm:w-1/3 text-center sm:text-left     mb-4 sm:mb-0">
                         <h4 className="text-lg font-semibold mb-2">FITNESS</h4>
                         <ul className="space-y-2">
                             <li><div className="flex flex-col sm:flex-row gap-2 text-sm sm:text-lg">Website: <a href="https://www.prateekvarshney.com" target="_blank" className="text-gray-200 hover:text-primary">https://www.prateekvarshney.com</a></div></li>

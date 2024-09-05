@@ -60,7 +60,7 @@ const Navbar = () => {
                     <div className="flex lg:hidden cursor-pointer">
                         <HamburgerMenuIcon onClick={handleMobileNavToggle}></HamburgerMenuIcon>
                     </div>
-                    <img src={dumbel} alt = "dumbel" className="h-11 w-11" />
+                    <img src={dumbel} alt = "dumbel" className="h-8 w-8" />
                 </div>
 
                 <div className="space-x-10 hidden lg:flex">
