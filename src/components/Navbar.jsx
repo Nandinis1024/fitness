@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { FaInstagram, FaTelegram, FaYoutube } from "react-icons/fa";
+import { FaDollarSign, FaInstagram, FaTelegram, FaYoutube } from "react-icons/fa";
 import { Spotlight } from "./ui/spotlight";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
@@ -74,9 +74,10 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex space-x-6 w-24">
-                    <FaInstagram className="hover:text-primary h-5 w-5 hover:cursor-pointer"/>
-                    <FaTelegram className="hover:text-primary h-5 w-5 hover:cursor-pointer" />
-                    <FaYoutube className="hover:text-primary w-5 h-5 hover:cursor-pointer" />
+                    <FaInstagram className="hover:text-primary h-5 w-5 hover:cursor-pointer" onClick={() => window.location.href = 'https://www.instagram.com/this_is_varshney'}/>
+                    <FaYoutube className="hover:text-primary w-5 h-5 hover:cursor-pointer" onClick={() => window.location.href = 'https://www.youtube.com/@thisisvarshney'
+                    } />
+                    <FaDollarSign className="hover:text-primary w-5 h-5 hover:cursor-pointer" onClick={() => window.location.href = ' https://www.youtube.com/@OptionTradingOnly'} />
                 </div>
             </div>
 

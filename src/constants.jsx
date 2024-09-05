@@ -38,33 +38,40 @@ export const features = [
   }
 ];
 
-
 export const testimonials = [
-    {
-      quote:
-        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light.",
-      name: "Charles Dickens",
-    },
-    {
-      quote:
-        "To be, or not to be, that is the question: ",
-      name: "William Shakespeare",
-    },
-    {
-      quote: "All that we see or seem is but a dream within a dream.",
-      name: "Edgar Allan Poe",
-    },
-    {
-      quote:
-        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-      name: "Jane Austen",
-    },
-    {
-      quote:
-        "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse,",
-      name: "Herman Melville",
-    },
-  ];
+  {
+    quote: "I hated workouts, had zero confidence. Prateek bhai made it so simple for me. Now, I can do even a pull-up by myself. Highly suggested! 😊",
+    name: "Priya Mishra",
+  },
+  {
+    quote: "Bhaiya itna zyada motivate kardete hai ki maza aajata hai, love you ❤ Kabhi socha nahi tha muscle up jaisa move mai bhi karunga.",
+    name: "Pratham Joshi",
+  },
+  {
+    quote: "I was quite overweight, Prateek sir helped me lose 7kgs in 3 months. The best thing is we did it by the food cooked at home.",
+    name: "Ashish Pandey",
+  },
+  {
+    quote: "Vegetarian ke liye options dhundna bohot difficult hai, prateek bhaiya ne fir bhi poori help karke meri diet banayi, I have been training since last 6 months with him and I can see a lot of difference.",
+    name: "Sachin Shukla",
+  },
+  {
+    quote: "Earlier, I had no confidence doing any workout in a gym kyuki lagta tha log meri hi wrong form dekh rahe honge. Then I started my home workout that Prateek bhai made and now, I can go to any gym and do all my exercises with full confidence and correct form.",
+    name: "Puravi Shekhar",
+  },
+  {
+    quote: "Bhaaai itne saare moves bhi hote hai workout me, ye mujhe Prateek bhai se hi pta chala. Muscle up to seekh gya, ab one arm pullup ki tayyari chal rahi hai.",
+    name: "Shivam Gaur",
+  },
+  {
+    quote: "As a housewife mere pas kuch option nahi hotah apne itna kuch seekhaya uske liye dhanyavad Apni pehli pushup apse hi mili hai. thank you 🙏 Next pull up karni hai 😊",
+    name: "Meena Rajvanshi",
+  },
+  {
+    quote: "Bhaisaab hum to paet se hi pareshaan the, biwi bacche mazak udaate the. Dheere dheere workout start kare prateek bhai ki madad se aur ab 2 inch paet andar hogya hai. Mehnat aisi hi rakkhenge aur bhavishya me pura andar karenge. Thank you bhai.",
+    name: "Anil Teotia",
+  },
+];
 
   export const images = [
     "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3ltfGVufDB8fDB8fHww",

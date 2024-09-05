@@ -16,7 +16,7 @@ const Course = () => {
       playerRef.current = new YT.Player('player', {
         height: '390',
         width: '640',
-        videoId: 'PLzltoJu-08',
+        videoId: 'oMHxrJ_Nsmk',
         playerVars: {
           playsinline: 1
         },
@@ -41,6 +41,21 @@ const Course = () => {
     if (event.data === YT.PlayerState.PLAYING && !done) {
       setTimeout(stopVideo, 6000);
       done = true;
+    }
+  };
+  
+  const handleBuyNowClick = () => {
+    const formContainer = document.getElementById('razorpay-container');
+    
+    if (formContainer) {
+      const script = document.createElement('script');
+      script.src = 'https://checkout.razorpay.com/v1/payment-button.js';
+      script.setAttribute('data-payment_button_id', 'pl_Ot4NMuGjXYc01Z');
+      script.async = true;
+
+      formContainer.appendChild(script);
+    } else {
+      console.error("Razorpay container not found in the DOM.");
     }
   };
 
@@ -70,7 +85,7 @@ const Course = () => {
       <div className="px-6 py-8 max-w-2xl mx-auto">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-2xl sm:text-[3xl] font-bold">Course Description</h2>
-          <Button className="text-black z-50 bg-[#ff6b00] hover:bg-[#d95b00] px-6 py-2 rounded-md">
+          <Button className="text-black z-50 bg-[#ff6b00] hover:bg-[#d95b00] px-6 py-2 rounded-md" onClick={handleBuyNowClick}>
             Buy Now
           </Button>
         </div>
