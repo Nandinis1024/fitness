@@ -29,13 +29,15 @@ const bounceAnimation = `
 
 const Intro = ()=> {
   const plugin = React.useRef(
-    Autoplay({ delay: 4000})
+    Autoplay({ delay: 4000, stopOnInteraction: true})
   )
 
   return (
     <Carousel
       plugins={[plugin.current]}
       className="w-[88.5%] mx-auto my-auto md:pt-7 bg-transparent"
+      onMouseEnter={plugin.current.stop}
+      onMouseLeave={plugin.current.reset}
     >
       {/* <style>{bounceAnimation}</style> */}
       <CarouselContent>
@@ -48,7 +50,7 @@ const Intro = ()=> {
                     
                       <div className="flex flex-row justify-center xl:justify-between">
                       <div className="space-y-5 md:pt-10">
-                          <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Strength Begins with <span className="text-primary"> Single </span>Step</h1>
+                          <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Strength Begins with <span className="text-blue-500"> Single </span>Step</h1>
                           <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned fitness trainer, is here to guide you on your journey to a healthier, stronger you.</p>
                           
                           <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 items-center">
@@ -57,7 +59,7 @@ const Intro = ()=> {
                                 <div className="flex flex-col justify-center items-center">
                                   <FiUsers className="text-xl md:text-4xl mb-2" />
                                   <div className="text-lg md:text-2xl font-bold">10k+</div>
-                                  <div className="text-md md:text-lg text-primary">Students Mentored</div>
+                                  <div className="text-md md:text-lg text-blue-500">Students Mentored</div>
                                 </div>
                               </div>
                             </div>
@@ -66,7 +68,7 @@ const Intro = ()=> {
                                 <div className="flex flex-col justify-center items-center">
                                   <FiYoutube className="text-xl md:text-4xl mb-2"/>
                                   <div className="text-lg md:text-2xl font-bold">1 Lakh+</div>
-                                  <div className="text-md md:text-lg text-primary">Youtube Subscribers</div>
+                                  <div className="text-md md:text-lg text-blue-500">Total Subscribers</div>
                                 </div>
                               </div>
                             </div>
@@ -85,10 +87,10 @@ const Intro = ()=> {
                     : 
                       <div className="flex flex-row justify-center xl:justify-between">
                           <div className="space-y-10 md:pt-10">
-                              <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Unleash Your <span  className="text-blue-500"> Fitness</span> Potential</h1>
+                              <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Unleash Your <span  className="text-primary"> Fitness</span> Potential</h1>
                               <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned fitness trainer, is here to guide you on your journey to a healthier, stronger you.</p>
                               <div className="flex space-x-2 pt-5">
-                                <a href="#Courses"><Button className="text-md bg-blue-500">Explore</Button></a>
+                                <a href="#Courses"><Button className="text-md bg-primary">Explore</Button></a>
                                 <a href="#Courses"><Button className="text-muted-foreground text-md" variant="primary">Learn More</Button></a>
                               </div>
                           </div>

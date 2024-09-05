@@ -1,12 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import { FaDollarSign, FaInstagram, FaTelegram, FaYoutube } from "react-icons/fa";
+import { FaDollarSign, FaInstagram, FaTelegram, FaYoutube} from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 import { Spotlight } from "./ui/spotlight";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import dumbel from '/dumbel-logo.png';
 
 const options = [
     'Home',
     'Features',
-    'Courses',
+    'Training',
     'Why Join Us?',
     'Contact'
 ];
@@ -58,7 +60,7 @@ const Navbar = () => {
                     <div className="flex lg:hidden cursor-pointer">
                         <HamburgerMenuIcon onClick={handleMobileNavToggle}></HamburgerMenuIcon>
                     </div>
-                    LOGO
+                    <img src={dumbel} alt = "dumbel" className="h-11 w-11" />
                 </div>
 
                 <div className="space-x-10 hidden lg:flex">
@@ -77,7 +79,7 @@ const Navbar = () => {
                     <FaInstagram className="hover:text-primary h-5 w-5 hover:cursor-pointer" onClick={() => window.location.href = 'https://www.instagram.com/this_is_varshney'}/>
                     <FaYoutube className="hover:text-primary w-5 h-5 hover:cursor-pointer" onClick={() => window.location.href = 'https://www.youtube.com/@thisisvarshney'
                     } />
-                    <FaDollarSign className="hover:text-primary w-5 h-5 hover:cursor-pointer" onClick={() => window.location.href = ' https://www.youtube.com/@OptionTradingOnly'} />
+                    <FaDollarSign className="hover:text-primary w-5 h-5 hover:cursor-pointer" onClick={() => window.location.href = 'https://optiontradingonly.in/'} />
                 </div>
             </div>
 
