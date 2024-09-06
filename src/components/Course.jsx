@@ -126,13 +126,16 @@ const Course = () => {
           </Button> */}
         </div>
         <p className="sm:text-lg text-muted-foreground">
+        <span className="text-gray-300">Simply make the payment by clicking on Buy Now and share the screenshot at <span className="cursor-pointer  underline" onClick={handleMail} > mail ID </span> or at <span className="underline"><a href="https://www.instagram.com/this_is_varshney">instagram.</a></span></span><br/><br/>
+        <span className="text-gray-300">Price:</span> 7,999₹<br/>
         <span className="text-gray-300">Duration:</span> 3 Months<br/>
 
         <span className="text-gray-300">Language:</span> Hindi/English (as per your choice)<br/>
 
         <span className="text-gray-300">Gender:</span> Suitable for both men & women<br/>
 
-        <span className="text-gray-300">Deliverables:</span> Custom Workout program as per your skillset and goal, help in diet using easy and small changes in your daily diet<br/>
+        <span className="text-gray-300">Deliverables:</span> Custom Workout Plan as per your skillset & goal + One on One guidance using videos, voice notes & calls as needed, help in diet using easy & small changes in your dsily diet.
+        <br/>
         <br/>
         
         <span className="text-gray-300">What can you expect from this program?</span><br/>
@@ -150,8 +153,6 @@ const Course = () => {
         In a duration of 3 months, you will be able to see yourself unlock some strength, some skills and see your body be better than before.<br/><br/>
 
         We will be connected through Whatsapp/Instagram directly during the course of the training program to provide you the most convenient experience.<br/><br/>
-
-        <span className="text-gray-300">Simply make the payment by clicking on Buy Now and share the screenshot at <span className="cursor-pointer  underline" onClick={handleMail} > mail ID </span> or at <span className="underline"><a href="https://www.instagram.com/this_is_varshney">instagram.</a></span></span><br/>
         </p>
       </div>
       <div className="hidden">{isRazorpayLoaded}</div>

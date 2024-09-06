@@ -20,7 +20,7 @@ const Bottombar = () => {
                 <div className="flex items-center">
                     <p>Join my Personal Training Program <span className="hidden md:inline-flex">to start today!</span></p>
                 </div>
-                <Button>Learn More</Button>
+                <a href="#Training"><Button>Learn More</Button></a>
             </div>
         </div>
     )

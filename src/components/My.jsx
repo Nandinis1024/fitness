@@ -33,7 +33,7 @@ const My = () => {
                             </motion.p>
                             <a href="#Courses">
                                 <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-foreground mx-auto text-center rounded-full relative mt-4">
-                                    <span>Transform Yourself →</span>
+                                    <span> <a href="#Training">Transform Yourself →</a></span>
                                     <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
                                 </button>
                             </a>
@@ -43,10 +43,10 @@ const My = () => {
             </div>
 
             <div className="my-4 mx-4 md:mx-8 flex flex-col items-center justify-center space-y-2">
-                <h1 className="text-2xl text-primary text-center flex items-center justify-center max-w-prose gap-2">
+                {/* <h1 className="text-2xl text-primary text-center flex items-center justify-center max-w-prose gap-2">
                     Join Our Telegram Community for best fitness advice and courses
-                    {/* <span><FaTelegram className="h-5 w-5 hover:cursor-pointer" /></span> */}
-                </h1>
+                    
+                </h1> */}
                 <p className="text-md text-center max-w-prose text-muted-foreground flex items-center justify-center">
                     *We do not offer medical advice, please consult your health professional if needed
                 </p>
@@ -58,10 +58,10 @@ const My = () => {
                         <div className="w-full md:w-7/12 text-center md:text-left">
                             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Know Your Trainer</h2>
                             <p className="text-lg text-muted-foreground mb-4">
-                                Meet Prateek, a dedicated fitness coach with over 10 years of experience in helping clients achieve their health and fitness goals. Prateek specializes in personalized workout plans and nutritional guidance tailored to your unique needs. His approach is not just about physical transformation but also fostering a positive and sustainable lifestyle change.
+                            Meet Prateek, a dedicated fitness coach with over 5 years of experience in helping clients achieve their health and fitness goals. Prateek specializes in personalized workout plans and nutritional guidance tailored to your unique needs. His approach is not just about physical transformation but also fostering a positive and sustainable lifestyle change.
                             </p>
                             <p className="text-lg text-muted-foreground">
-                                Whether you're a beginner or an experienced athlete, Prateek's expert coaching will help you unlock your full potential. Join his community today and take the first step towards a healthier, happier you.
+                            Whether you're a beginner or an experienced athlete, Prateek's expert coaching will help you unlock your full potential. Join his personal training program today and take the first step towards a healthier, happier you.
                             </p>
                         </div>
                         <div className="flex-shrink-0 w-full md:w-5/12 h-64 rounded-full overflow-hidden">
