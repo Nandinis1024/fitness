@@ -101,8 +101,9 @@ const Course = () => {
   return (
     <div
       id="Training"
-      className="flex flex-col w-[90%] mx-auto text-white pt-20 sm:h-auto  justify-between"
+      className="flex flex-col w-[90%] mx-auto text-white pt-20 sm:h-auto justify-between items-center"
     >
+      <h1 className="text-primary text-4xl font-bold p-3">Fitness Training Program</h1>
       <div
         id="player-container"
         className="relative h-full w-full max-w-3xl mx-auto overflow-hidden rounded-lg aspect-video"
@@ -126,7 +127,7 @@ const Course = () => {
           </Button> */}
         </div>
         <p className="sm:text-lg text-muted-foreground">
-        <span className="text-gray-300">Simply make the payment by clicking on Buy Now and share the screenshot at <span className="cursor-pointer  underline" onClick={handleMail} > mail ID </span> or at <span className="underline"><a href="https://www.instagram.com/this_is_varshney">instagram.</a></span></span><br/><br/>
+        <span className="text-gray-300">Simply make the payment by clicking on Buy Now and share the screenshot at <span className="cursor-pointer  underline" onClick={handleMail} > mail ID </span> or at <span className="underline"><a href="https://www.instagram.com/this_is_varshney" target="_blank">instagram.</a></span></span><br/><br/>
         <span className="text-gray-300">Price:</span> 7,999₹<br/>
         <span className="text-gray-300">Duration:</span> 3 Months<br/>
 
@@ -134,7 +135,7 @@ const Course = () => {
 
         <span className="text-gray-300">Gender:</span> Suitable for both men & women<br/>
 
-        <span className="text-gray-300">Deliverables:</span> Custom Workout Plan as per your skillset & goal + One on One guidance using videos, voice notes & calls as needed, help in diet using easy & small changes in your dsily diet.
+        <span className="text-gray-300">Deliverables:</span> Custom Workout Plan as per your skillset & goal + One on One guidance using videos, voice notes & calls as needed, help in diet using easy & small changes in your daily diet.
         <br/>
         <br/>
         

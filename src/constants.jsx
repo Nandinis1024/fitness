@@ -38,7 +38,7 @@ export const features = [
   }
 ];
 
-export const testimonials = [
+export const testimonials1 = [
   {
     quote: "I hated workouts, had zero confidence. Prateek bhai made it so simple for me. Now, I can do even a pull-up by myself. Highly suggested! 😊",
     name: "Priya Mishra",
@@ -54,7 +54,10 @@ export const testimonials = [
   {
     quote: "Vegetarian ke liye options dhundna bohot difficult hai, prateek bhaiya ne fir bhi poori help karke meri diet banayi, I have been training since last 6 months with him and I can see a lot of difference.",
     name: "Sachin Shukla",
-  },
+  }
+];
+
+export const testimonials2 = [
   {
     quote: "Earlier, I had no confidence doing any workout in a gym kyuki lagta tha log meri hi wrong form dekh rahe honge. Then I started my home workout that Prateek bhai made and now, I can go to any gym and do all my exercises with full confidence and correct form.",
     name: "Puravi Shekhar",

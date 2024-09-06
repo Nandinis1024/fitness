@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { FaRupeeSign, FaInstagram, FaTelegram, FaYoutube} from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaIndianRupeeSign } from "react-icons/fa6";
+import { IoLogoYoutube } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { Spotlight } from "./ui/spotlight";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import logo from '/biceps-2.png';
+import logo from '/logo-3.png';
 
 const options = [
     'Home',
@@ -60,7 +62,7 @@ const Navbar = () => {
                     <div className="flex lg:hidden cursor-pointer">
                         <HamburgerMenuIcon onClick={handleMobileNavToggle}></HamburgerMenuIcon>
                     </div>
-                    <img src={logo} alt = "dumbel" className="h-10 w-10" />
+                    <img src={logo} alt = "dumbel" className="h-11 w-11 font-bold" />
                 </div>
 
                 <div className="space-x-10 hidden lg:flex">
@@ -76,10 +78,10 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex space-x-6 w-24">
-                    <FaInstagram className="hover:text-primary h-5 w-5 hover:cursor-pointer" onClick={() => window.location.href = 'https://www.instagram.com/this_is_varshney'}/>
-                    <FaYoutube className="hover:text-primary w-5 h-5 hover:cursor-pointer" onClick={() => window.location.href = 'https://www.youtube.com/@thisisvarshney'
+                    <FaInstagram className="hover:text-primary h-[19px] w-5 pt-0.5 hover:cursor-pointer" onClick={() => window.location.href = 'https://www.instagram.com/this_is_varshney'}/>
+                    <IoLogoYoutube className="hover:text-primary w-5 h-5 hover:cursor-pointer" onClick={() => window.location.href = 'https://www.youtube.com/@thisisvarshney'
                     } />
-                    <FaRupeeSign className="hover:text-primary w-5 h-5 hover:cursor-pointer" onClick={() => window.location.href = 'https://optiontradingonly.in/'} />
+                    <FaIndianRupeeSign className="hover:text-primary w-5 h-[19px] pt-0.5 hover:cursor-pointer" onClick={() => window.location.href = 'https://optiontradingonly.in/'} />
                 </div>
             </div>
 
