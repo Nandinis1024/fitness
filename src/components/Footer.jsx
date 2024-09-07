@@ -14,9 +14,9 @@ const Footer = () => {
 
     return (
         <footer id="Contact" className="bg-black text-foreground py-8 mt-10 pb-20">
-            <div className="container mx-auto flex justify-between flex-wrap">
+            <div className="container mx-auto flex sm:justify-between justify-center flex-wrap">
                 <div className="flex flex-col gap-10">
-                    <div className="w-full sm:w-1/3 text-center sm:text-left     mb-4 sm:mb-0">
+                    <div className="w-full sm:w-1/3 text-center sm:text-left  mb-2 sm:mb-0">
                         <h4 className="text-lg font-semibold mb-2">FITNESS</h4>
                         <ul className="space-y-2">
                             <li><div className="flex flex-col sm:flex-row gap-2 text-sm sm:text-md">Website: <a href="https://www.prateekvarshney.com" target="_blank" className="text-gray-200 hover:text-primary">https://www.prateekvarshney.com</a></div></li>
@@ -44,8 +44,8 @@ const Footer = () => {
                         </ul>
                     </div> */}
                 </div>
-                <div className="flex flex-col gap-20">
-                    <div className="w-full  text-center space-y-2 ">
+                <div className="flex flex-col gap-12 sm:gap-14 sm:mt-0 mt-4">
+                    <div className="w-full  text-center space-y-2">
                         <h4 className="mt-5 text-lg font-semibold mb-2">CONTACT US</h4>
                         <p className="cursor-pointer" onClick={handleClick}>Email: prateekvarshney1224@gmail.com</p>
                         <p>Instagram: <a href="https://www.instagram.com/this_is_varshney" target="_blank" className="text-gray-200 hover:text-primary">https://www.instagram.com/this_is_varshney</a></p>

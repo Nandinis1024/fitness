@@ -11,7 +11,7 @@ const My = () => {
         <div id="Home" className="h-full w-full">
             <Navbar />
 
-            <div className="flex items-center justify-center pt-20">
+            <div className="flex items-center justify-center sm:pt-20 pt-12">
                 <div className="h-72 w-full mx-6 mb-4 rounded-md flex items-center justify-center">
                     <ImagesSlider className="max-h-[20rem] rounded-md" images={images}>
                         <motion.div

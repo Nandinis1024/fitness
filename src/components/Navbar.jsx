@@ -54,7 +54,7 @@ const Navbar = () => {
     return (
         <>
             <div 
-                className={`flex justify-between items-center px-4 text-foreground py-4 mb-10 fixed top-0 left-0 right-0 z-30 transition-colors duration-300 ${scrolled || openMobileNav ? 'bg-black/90 shadow-md' : 'bg-transparent'} select-none`}
+                className={`flex justify-between items-center px-4 text-foreground py-3 mb-10 fixed top-0 left-0 right-0 z-30 transition-colors duration-300 ${scrolled || openMobileNav ? 'bg-black/90 shadow-md' : 'bg-transparent'} select-none`}
             >
                 <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
 
@@ -85,7 +85,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div ref={mobileNavRef} className={`${openMobileNav ? 'flex' : 'hidden'} transition-all fixed top-10 select-none bg-black/90 text-primary-foreground w-screen justify-center z-30 py-6`}>
+            <div ref={mobileNavRef} className={`${openMobileNav ? 'flex' : 'hidden'} transition-all fixed top-14 select-none bg-black/90 text-primary-foreground w-screen justify-center z-30 py-6`}>
                 <div className="space-y-6">
                     {options.map((option, index) => (
                         <div key={index} className="hover:cursor-pointer hover:text-primary">
