@@ -8,8 +8,17 @@ import Testimonials from './components/Testimonials'
 import { Spotlight } from './components/ui/spotlight'
 import Intro from './components/Intro'
 import Bottombar from './components/Bottombar'
+import { useEffect } from 'react'
 
 function App() {
+
+  const count = async () => {
+    await fetch('http://ec2-52-66-249-248.ap-south-1.compute.amazonaws.com:3000/visitor', {
+      method: 'POST'
+    })
+  }
+
+  useEffect(() => count(), [])
 
   return (
     <div className="bg-background dark" style={{
