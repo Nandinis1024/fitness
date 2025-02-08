@@ -50,7 +50,7 @@ const Intro = ()=> {
                     
                       <div className="flex flex-row justify-center xl:justify-between">
                         <div className="space-y-5 md:pt-10">
-                            <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Fitness Begins with a<span className="text-blue-500"> Single </span>Step</h1>
+                            <h1 className="font-bold tracking-tighter text-5xl md:text-7xl">Fitness Begin with a<span className="text-blue-500"> Single </span>Step</h1>
                             <p className="max-w-md text-muted-foreground sm:text-lg md:text-xl">Prateek Varshney, a renowned fitness trainer, is here to guide you on your journey to a healthier, stronger you.</p>
                             
                             <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 items-center">
