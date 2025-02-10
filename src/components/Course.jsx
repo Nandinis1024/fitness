@@ -104,7 +104,7 @@ const Course = () => {
       className="flex flex-col w-[90%] mx-auto text-white pt-20 sm:h-auto justify-between items-center"
     >
       <h1 className="text-primary text-4xl font-bold p-3">Fitness Training Program</h1>
-      <div
+{/*       <div
         id="player-container"
         className="relative h-full w-full max-w-3xl mx-auto overflow-hidden rounded-lg aspect-video"
       >
@@ -115,7 +115,7 @@ const Course = () => {
         {/* <Button className="absolute bottom-4 right-4 text-black z-50 bg-[#ff6b00] hover:bg-[#d95b00] px-6 py-2 rounded-md">
           Buy Now
         </Button> */}
-      </div>
+      </div> */}
       <div className="px-6 py-8 max-w-3xl mx-auto">
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 items-center justify-between mb-4 relative">
           <h2 className="text-2xl sm:text-[3xl] font-bold">Training Program Details </h2>
