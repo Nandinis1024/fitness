@@ -2,56 +2,56 @@ import { useState, useEffect, useRef } from "react";
 import { Button } from "./ui/button";
 
 const Course = () => {
-  const playerRef = useRef(null);
+  // const playerRef = useRef(null);
   const buttonRef = useRef(null);
   const [isRazorpayLoaded, setIsRazorpayLoaded] = useState(0); 
 
-  useEffect(() => {
-    // Create a script element to load the YouTube IFrame API
-    const tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    const firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  // useEffect(() => {
+  //   // Create a script element to load the YouTube IFrame API
+  //   const tag = document.createElement('script');
+  //   tag.src = "https://www.youtube.com/iframe_api";
+  //   const firstScriptTag = document.getElementsByTagName('script')[0];
+  //   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    // Define the function that will be called when the API is ready
-    window.onYouTubeIframeAPIReady = () => {
-      playerRef.current = new YT.Player('player', {
-        height: '390',
-        width: '640',
-        videoId: 'oMHxrJ_Nsmk',
-        playerVars: {
-          playsinline: 1
-        },
-        events: {
-          onReady: onPlayerReady,
-          onStateChange: onPlayerStateChange
-        }
-      });
-    };
+  //   // Define the function that will be called when the API is ready
+  //   window.onYouTubeIframeAPIReady = () => {
+  //     playerRef.current = new YT.Player('player', {
+  //       height: '390',
+  //       width: '640',
+  //       videoId: 'oMHxrJ_Nsmk',
+  //       playerVars: {
+  //         playsinline: 1
+  //       },
+  //       events: {
+  //         onReady: onPlayerReady,
+  //         onStateChange: onPlayerStateChange
+  //       }
+  //     });
+  //   };
 
-    return () => {
-      // Cleanup the YouTube API script if the component unmounts
-      delete window.onYouTubeIframeAPIReady;
-    };
-  }, []);
+  //   return () => {
+  //     // Cleanup the YouTube API script if the component unmounts
+  //     delete window.onYouTubeIframeAPIReady;
+  //   };
+  // }, []);
 
-  const onPlayerReady = (event) => {
-    event.target.playVideo();
-  };
+  // const onPlayerReady = (event) => {
+  //   event.target.playVideo();
+  // };
 
-  const onPlayerStateChange = (event) => {
-    if (event.data === YT.PlayerState.PLAYING && !done) {
-      setTimeout(stopVideo, 6000);
-      done = true;
-    }
-  };
+  // const onPlayerStateChange = (event) => {
+  //   if (event.data === YT.PlayerState.PLAYING && !done) {
+  //     setTimeout(stopVideo, 6000);
+  //     done = true;
+  //   }
+  // };
   
 
-  const stopVideo = () => {
-    if (playerRef.current) {
-      playerRef.current.stopVideo();
-    }
-  };
+  // const stopVideo = () => {
+  //   if (playerRef.current) {
+  //     playerRef.current.stopVideo();
+  //   }
+  // };
 
   useEffect(() => {
     checkout();
@@ -104,7 +104,7 @@ const Course = () => {
       className="flex flex-col w-[90%] mx-auto text-white pt-20 sm:h-auto justify-between items-center"
     >
       <h1 className="text-primary text-4xl font-bold p-3">Fitness Training Program</h1>
-{/*       <div
+      {/*       <div
         id="player-container"
         className="relative h-full w-full max-w-3xl mx-auto overflow-hidden rounded-lg aspect-video"
       >
@@ -114,7 +114,7 @@ const Course = () => {
         ></div>
         {/* <Button className="absolute bottom-4 right-4 text-black z-50 bg-[#ff6b00] hover:bg-[#d95b00] px-6 py-2 rounded-md">
           Buy Now
-        </Button> */}
+        </Button> *
       </div> */}
       <div className="px-6 py-8 max-w-3xl mx-auto">
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 items-center justify-between mb-4 relative">
